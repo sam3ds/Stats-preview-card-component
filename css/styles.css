@@ -1,0 +1,165 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(233, 47%, 7%);
+  height: 100%;
+}
+
+.white {
+  color: hsl(0, 0%, 100%);
+}
+
+.white__p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.white__stat {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.violet {
+  color: hsl(277, 64%, 61%);
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  position: relative;
+  top: 10rem;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  width: 1250px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+.img-box {
+  width: 100%;
+  position: relative;
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+/* .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%,40%);
+
+} */
+
+.card__text {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* padding: 2.5rem 5.5rem 3rem 3.5rem; */
+}
+
+.big__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  margin: 4.5rem  7.5rem 3rem 4.5rem;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 2;
+  margin:auto 7.5rem 2.5rem 4.5rem;
+}
+.stats {
+  display: flex;
+  grid-gap: 50px;
+  margin: auto 7.5rem auto 4.5rem;
+  justify-content: space-between;
+}
+.stats_title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.stats_heading {
+  margin-top: .5rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 13px;
+}
+@media (max-width: 810px) {
+  .card {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .img-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .card__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+  }
+  .card__text {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    /* padding: 2.5rem 5.5rem 3rem 3.5rem; */
+  }
+
+  .big__title {
+    font-size: 1.7rem;
+    margin: 2rem 2rem 0;
+  }
+  .text {
+    font-size: .8rem;
+    margin: 1rem 2.2rem;
+    line-height: 2;
+  }
+
+  .stats {
+    display: block;
+    margin: 2rem;
+  }
+
+  .stats_title {
+    font-size: 1.5rem;
+    margin: 1rem 2rem .3rem;
+  }
+
+  .stats_heading {
+    font-size: .8rem;
+  }
+
+  .attribution {
+    position: relative;
+    top: 2rem;
+  }
+}
